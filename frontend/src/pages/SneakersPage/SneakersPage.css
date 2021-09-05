@@ -1,0 +1,129 @@
+.sneakerspage {
+    padding: 5rem 10rem;
+}
+
+.sneakerspage_title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0 1rem 0.5rem;
+}
+
+
+.filter_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.back_button {
+    cursor: pointer;
+}
+
+.back_button:hover {
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.front_container {
+    display: flex;
+    
+}
+
+.filter_sneaker_container {
+    display: flex;
+    flex: 0.2;
+}
+
+.brands_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.products_title {
+    margin-bottom: 2rem;
+}
+
+.brand_button {
+    cursor: pointer;
+    background: none;
+    margin: 1rem;
+    font-size: 1.2rem;
+    border:none;
+    font-weight: normal;
+}
+
+.brand_button:hover {
+    font-weight: bold;
+}
+
+
+.sneakerspage_sneakers {
+    flex: 0.8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.pagination_container {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.pagination_buttons {
+    list-style: none;
+    display: flex;
+  }
+  
+  .pagination_buttons a {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 7px;
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+  }
+  
+.pagination_buttons a:hover, .pagination_active a {
+    color: #fff;
+    background-color: #000;
+  }
+.pagination_disabled a {
+    display: none;
+}
+
+
+@media (max-width: 1270px) {
+.sneakerspage {
+        padding: 5rem 2rem;
+}
+    
+.front_container {
+    flex-direction: column;
+}
+    
+.sneakerspage_sneakers {
+    flex: 1;
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media (max-width: 900px) {
+    .sneakerspage {
+        padding: 3rem 1rem;
+    }
+        
+        
+    .sneakerspage_sneakers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .sneakerspage_sneakers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

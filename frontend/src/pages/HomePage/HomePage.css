@@ -1,0 +1,29 @@
+.homepage {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sneakersButton {
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 0 #000;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+
+}
+
+.sneakersButton:hover {
+    box-shadow: inset 15rem 0 0 0 #000;
+    color: #fff;
+
+
+}

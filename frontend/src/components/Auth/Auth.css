@@ -1,0 +1,58 @@
+.authpage {
+    height: 100vh;
+
+}
+
+.auth_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+    gap: 1rem; 
+}
+
+.auth_container form {
+    width: 100%;
+}
+
+.sign_in_button {
+    background: rgb(24,119,242);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(48, 35, 35, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.sign_in_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.sign_in_text {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.facebook_logo, .google_logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+.google_logo {
+    border-radius: 5px;
+}
+
+.sign_in_button:hover {
+    transform: translateY(-5%);   
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.6);
+}

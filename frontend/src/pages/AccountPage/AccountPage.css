@@ -1,0 +1,66 @@
+.account_page {
+    min-height: 100vh;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.left_container, .right_container {
+    display: flex;
+    flex-direction: column;
+    flex: 0.2;
+    padding: 2rem;
+}
+
+.right_container {
+    flex: 0.6;
+}
+
+.account_container, .order_container {
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.account_container {
+    max-width: 20rem;
+}
+
+.order_container {
+    max-width: 45rem;
+}
+
+
+.profile_picture {
+    object-fit: cover;
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+}
+
+.account_container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.order_container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.shipping_container {
+
+}
+
+@media (max-width: 1100px) {
+    .account_page {
+        flex-direction: column;
+        align-items: center;
+        gap: 0rem;
+    }
+    .order_container {
+        width: 100%;
+    }
+}

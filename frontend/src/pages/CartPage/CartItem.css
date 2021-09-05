@@ -1,0 +1,45 @@
+.cartitem {
+    width: 100%;
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    gap: 8px;
+    background-color: #fff;
+    border-radius: 2px;
+    place-items: center;
+}
+
+.cartitem_name {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    
+
+}
+
+
+.cartitem_select {
+    padding: 0.5rem;
+}
+
+.cartitem_delete {
+    padding: 0.5rem;
+    color: red;
+    background: #f4f4f4;
+    border: 1px solid #171717;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.cartitem_delete:hover, 
+.cartitem_delete:focus,
+.cartitem_delete:active {
+    background: #171717;
+    transform: scale(1.2);
+}
+
+@media (max-width: 400px) {
+    .cart_item_text {
+        font-size: 0.8rem;
+    }
+}

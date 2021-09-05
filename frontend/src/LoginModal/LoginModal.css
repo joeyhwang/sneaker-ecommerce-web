@@ -1,0 +1,48 @@
+
+.modal_background {
+    z-index: 200;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    transform: translateY(50%);
+  }
+  
+  .modal_container {
+    z-index: 200;
+    height: 300px;
+    width: 325px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
+  
+
+.title_close_container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+.title_close_container button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+.title_close_container button:hover {
+  transform: scale(1.2);
+}
+  
+.login_text {
+  text-align: center;
+  margin-top: 1rem;
+}

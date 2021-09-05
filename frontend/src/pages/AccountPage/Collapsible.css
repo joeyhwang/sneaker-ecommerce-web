@@ -1,0 +1,37 @@
+.order_title_container {
+    
+    position: relative;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 2px solid #000;
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.arrow_button {
+    position:absolute;
+    right: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(180deg);
+}
+
+.arrow_button.opened {
+    transform: rotate(0);
+}
+
+.toggle {
+    overflow: hidden;
+    transition: height ease-in-out 0.4s;
+
+}
+
+@media (max-width: 1100px) {
+    .order_title_container {
+    
+        width: 100%;
+    }
+}

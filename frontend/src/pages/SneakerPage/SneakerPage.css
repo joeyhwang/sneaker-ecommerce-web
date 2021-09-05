@@ -1,0 +1,171 @@
+.sneaker_page {
+    min-height: 100vh;
+}
+.back_button {
+    width:3rem;
+    margin-left: 2rem;
+    margin-top:1rem;
+}
+
+.loading {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sneaker_page_container {
+    margin: 1rem auto;
+    display: flex;
+    padding: 5rem;
+}
+
+.sneaker_page_left {
+    display: flex;
+    
+    flex: 0.5;  
+}
+
+.sneaker_page_right {
+    flex: 0.4;
+}
+
+.left_image {
+
+    margin: 1rem;
+    flex: 0.9;
+}
+.right_info >h1 {
+    font-size: 2rem;
+}
+
+.right_info >p {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+    line-height: 1.8;
+}
+
+.right_name {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.right_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.size_select {
+    padding: 0.3rem;
+    margin-left: 0.5rem;
+}
+
+.inStock, .price {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.price {
+    font-size: 2.5rem;
+}
+
+.cart_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity_container {
+    height: 3rem;
+    display: flex;
+}
+
+.qty_input {
+    width: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1.5px solid #000;
+}
+
+
+.increment, .decrement, .add_to_cart {
+    padding: 0 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background: transparent;
+    border: 2px solid #000;
+    outline: none;
+}
+
+.increment:hover, .decrement:hover {
+    background: #171717;
+    color: #fff;
+}
+
+
+
+.add_to_cart {
+    padding: 0.75rem 2rem;
+    box-shadow: inset 0 0 0 0 #000;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.add_to_cart:hover {
+    box-shadow: inset 15rem 0 0 0 #000;
+    color: #fff;
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .sneaker_page_left {
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+    }
+    
+    .sneaker_page_container {
+        margin: 0rem auto;
+        flex-direction: column;
+        padding: 0rem 5rem 5rem 5rem;
+    }
+    .cart_container {
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 500px)  {
+
+    .right_info >p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .quantity_container {
+        height: 2rem;
+        display: flex;
+    }
+    
+    .qty_input {
+        width: 2rem;
+        font-size: 1rem;
+    
+    }
+    
+        
+    .increment, .decrement, .add_to_cart {
+        padding: 0 0.3rem;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .sneaker_page_container {
+        padding: 0rem 2.5rem;
+    }
+}

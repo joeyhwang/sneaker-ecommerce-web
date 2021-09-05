@@ -1,0 +1,56 @@
+.accordion {
+    max-width: 400px;
+}
+
+.accordion-button {
+    cursor: pointer;
+    display: flex;
+    background: none;
+    border:none;
+    font-weight: bold;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    
+}
+
+.accordion-toggle {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height ease-in-out 0.4s;
+}
+
+ .accordion-toggle button {
+    margin-top: 1rem;
+    cursor: pointer;
+    background: none;
+    border:none;
+    font-weight: normal;
+    font-size: 1.2rem;
+
+}
+
+.accordion-toggle button:hover,.accordion-toggle button.highlight_button {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+@media (max-width: 1250px) {
+    .accordion-toggle {
+        margin-bottom: 0 px;
+        flex-direction: row;
+        gap: 1rem;
+    }   
+}
+
+@media (max-width: 375px) {
+    .accordion-toggle.opened button {
+        font-size: 1rem;
+    
+    }
+}

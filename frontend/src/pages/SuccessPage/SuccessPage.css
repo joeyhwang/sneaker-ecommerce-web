@@ -1,0 +1,34 @@
+.success_page {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order_placed {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-align:center;
+}
+
+.continue_shopping_button {
+    padding: .75rem 3rem;
+    font-weight: bold;
+    background-color: transparent;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.continue_shopping_button:hover{
+    color: #fff;
+    background: #000;
+    
+}
+
+
