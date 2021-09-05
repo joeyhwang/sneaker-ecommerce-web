@@ -1,7 +1,7 @@
 import React from 'react'
 import './LoginModal.css' 
-import Auth  from '../components/Auth/Auth'
-import Backdrop from '../components/Backdrop/Backdrop'
+import Auth  from '../Auth/Auth'
+import Backdrop from '../Backdrop/Backdrop'
 const LoginModal = ({openModal, setOpenModal}) => {
 
     const clickedModalBackground = (e) => {
