@@ -35,7 +35,7 @@ The left side are the env variable names, which must be exactly this. The right 
 - SECRET = ANYTHING
 - STRIPE_API = YOUR_STRIPE_sk_test
 - STRIPE_ENDPOINT_SECRET = YOUR_STRIPE_whsec
-- FRONTEND_URL = http://localhost:3000
+- FRONTEND_URL = http://localhost:3000/
 - NODE_ENV = development
 
 ## frontend/ directory .env variables (these are mandatory in order to run the project.)
