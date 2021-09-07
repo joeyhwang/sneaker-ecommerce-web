@@ -101,7 +101,7 @@
     background: #dd219e;
 }
 
-@media (max-width: 960px) {
+/* @media (max-width: 960px) {
     .navbar_links {
         display: none;
     }
@@ -115,4 +115,4 @@
     .navbar_logo h2 {
         font-size: 1rem;
     }
-}
+} */

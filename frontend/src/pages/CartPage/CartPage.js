@@ -31,38 +31,39 @@ const CartPage = () => {
 
     const handleCheckout = async (e) => {
         e.preventDefault()
-        
-        const line_items = cartItems.map(item => {
-            return {
-                quantity: item.quantity,
-                price_data: {
-                    currency: 'usd',
-                    unit_amount: item.price * 100,
-                    tax_behavior: 'exclusive',
-                    product_data: {
-                        "name": `${item.name} Size ${item.size}`,
-                
-                        
+
+        if (cartItems.length === 0) {
+            alert.error("You must have at least one cart item to checkout.")
+        } else {
+            const line_items = cartItems.map(item => {
+                return {
+                    quantity: item.quantity,
+                    price_data: {
+                        currency: 'usd',
+                        unit_amount: item.price * 100,
+                        tax_behavior: 'exclusive',
+                        product_data: {
+                            "name": `${item.name} Size ${item.size}`,        
+                        }
                     }
                 }
-            }
-        })
-        console.log(auth)
-        if (!auth || auth.length === 0) {
-            alert.error("You must be logged in to checkout")
-        } else {
-            const response = await axios.post('create-checkout-session', {
-                line_items, customer_email: auth.email
             })
-            const {sessionId} = response.data
-            const {error} = await stripe.redirectToCheckout({
-                sessionId
-            })
-            if (error) {
-                console.log(error)
+            if (!auth || auth.length === 0) {
+                alert.error("You must be logged in to checkout")
+            } else {
+                const response = await axios.post('create-checkout-session', {
+                    line_items, customer_email: auth.email
+                })
+                const {sessionId} = response.data
+                const {error} = await stripe.redirectToCheckout({
+                    sessionId
+                })
+                if (error) {
+                    console.log(error)
+                }
             }
+            
         }
-        
     }
 
     return (
