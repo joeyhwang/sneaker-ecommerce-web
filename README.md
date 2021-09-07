@@ -4,6 +4,7 @@
 Live: https://warm-plains-75848.herokuapp.com/
 
 ## Video Walkthrough
+https://www.youtube.com/watch?v=qgrryEHVzv4
 
 ## Website Description
 - Customers can log in through Google and Facebook OAuth using PassportJS and customers can add/remove sneakers to cart to checkout. 
