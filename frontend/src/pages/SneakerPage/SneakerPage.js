@@ -49,12 +49,12 @@ const SneakerPage = ({match, history}) => {
         const cartSneaker = cartItems.filter(item => 
             item.sneaker === sneaker._id && item.size === sneaker.sizes[sneakerIncrement])
         
-        if (cartSneaker.length === 0) {
+        if (cartSneaker.length === 0 ) {
             qty < sneaker.quantities[sneakerIncrement] ? setQty(qty => qty + 1)
             : alert.error("cannot increment above current stock")
-            
-        } else {
-            sneaker.quantities[sneakerIncrement] - qty - cartSneaker[0].quantity === 0 ? 
+        } else { 
+            console.log(sneaker.quantities[sneakerIncrement] - qty - cartSneaker[0].quantity)
+            sneaker.quantities[sneakerIncrement] - qty - cartSneaker[0].quantity <= 0 ? 
             alert.error("cannot increment above current stock") : setQty(qty => qty + 1)
         }
         
