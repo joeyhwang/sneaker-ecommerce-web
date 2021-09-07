@@ -5,7 +5,6 @@ import Backdrop from '../Backdrop/Backdrop'
 const LoginModal = ({openModal, setOpenModal}) => {
 
     const clickedModalBackground = (e) => {
-        console.log(e.target.className)
        if (e.target.className === "modal_background") 
            setOpenModal(!openModal)
 

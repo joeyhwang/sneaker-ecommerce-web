@@ -5,10 +5,11 @@ import {useSelector} from 'react-redux'
 import Collapsible from './Collapsible'
 import axios from 'axios'
 import Table from '../../components/Table/Table'
-
 const AccountPage = () => {
     const authData = useSelector(state => state.auth.authData)
     const [orderData, setOrderData] = useState({orders: []})
+    console.log(authData)
+
     useEffect(() => {
         const getAllOrders = async () => {
             const res = await axios.get('/order/all')
@@ -22,7 +23,7 @@ const AccountPage = () => {
         <div className = "account_page">
             <div className = "left_container">
                 <div className = "account_container">
-                    <img src = {authData.image} className = "profile_picture" alt = "profile"/>
+                    <img src = {authData && authData.image} className = "profile_picture" alt = "profile"/>
                     <h3>
                         {authData && authData.name}
                     </h3>
