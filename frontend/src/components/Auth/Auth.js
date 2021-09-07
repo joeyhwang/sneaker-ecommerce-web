@@ -4,7 +4,6 @@ import gLogo from '../../assets/auth/g-logo.png'
 const Auth = () => {
 
     return (
-        <div className = "authpage">
             <div className = "auth_container">
               <form action = {`/auth/google`} >
                 <button className = "sign_in_button" style ={{background: 'rgb(66,133,244)'}} type ="submit">
@@ -23,7 +22,6 @@ const Auth = () => {
                 </button>
               </form>
             </div>
-        </div>
     )
 }
 
