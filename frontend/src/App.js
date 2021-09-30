@@ -10,6 +10,7 @@ import SideDrawer from './components/SideDrawer/SideDrawer';
 import HomePage from './pages/HomePage/HomePage';
 import AccountPage from './pages/AccountPage/AccountPage';
 import SuccessPage from './pages/SuccessPage/SuccessPage';
+import Footer from './components/Footer/Footer';
 function App() {
 
   const [sideToggle, setSideToggle] = useState(false)
@@ -29,6 +30,7 @@ function App() {
           <Route path = "/success/:session_id" component = {SuccessPage}/>
         </Switch>
       </main>
+      {/* <Footer/> */}
   </Router>
   );
 }

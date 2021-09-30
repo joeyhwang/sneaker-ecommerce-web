@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import './HomePage.css'
 const HomePage = () => {
     return (
-        <div className = "homepage" style = {{background: "url('/assets/homepage/sneakers_background2.jpg')", 
+        <div className = "homepage" style = {{background: "url('/assets/homepage/sneakers_background2.webp')", 
         backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center',
         }}>
      
